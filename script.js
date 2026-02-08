@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatInput = document.getElementById('chat-input');
     const chatMessages = document.getElementById('chat-messages');
 
-    const N8N_WEBHOOK_URL = 'https://irenenotions.app.n8n.cloud/webhook/a4143705-eca0-4d53-a1db-49416a6824a6/chat';
+    const N8N_WEBHOOK_URL = 'https://ireneautomatioms.click/webhook/a4143705-eca0-4d53-a1db-49416a6824a6/chat';
 
     // Toggle Chat Window
     chatTrigger.addEventListener('click', () => {
