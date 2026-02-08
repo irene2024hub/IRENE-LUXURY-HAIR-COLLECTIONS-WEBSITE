@@ -124,4 +124,21 @@ document.addEventListener('DOMContentLoaded', () => {
         }
         return sid;
     }
+
+    // FAQ Accordion Logic
+    const faqQuestions = document.querySelectorAll('.faq-question');
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+
+            // Optional: Close others
+            faqQuestions.forEach(q => {
+                if (q !== question) {
+                    q.parentElement.classList.remove('active');
+                }
+            });
+
+            item.classList.toggle('active');
+        });
+    });
 });

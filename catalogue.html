@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Catalogue - Irene Luxury Hair & Collections</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .catalogue-hero {
+            padding: 150px 5% 60px;
+            text-align: center;
+            background-color: var(--mid-pink);
+        }
+
+        .catalogue-hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+        }
+
+        .catalogue-container {
+            padding: 60px 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .category-title {
+            font-size: 2.5rem;
+            margin: 60px 0 30px;
+            border-bottom: 2px solid var(--primary-gold);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+            position: relative;
+        }
+
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .product-image {
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .product-info {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.4rem;
+            color: var(--dark-charcoal);
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .product-price {
+            font-size: 1.2rem;
+            color: var(--primary-gold);
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        .buy-button {
+            display: inline-block;
+            padding: 10px 30px;
+            background: var(--primary-gold);
+            color: var(--dark-charcoal);
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            transition: background 0.3s;
+        }
+
+        .buy-button:hover {
+            background: var(--dark-charcoal);
+            color: var(--primary-gold);
+        }
+
+        .back-home {
+            margin-top: 40px;
+            display: inline-block;
+            color: var(--dark-charcoal);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .back-home:hover {
+            color: var(--primary-gold);
+        }
+    </style>
+</head>
+
+<body class="catalogue-page">
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="media/logo.jpeg" alt="Irene Luxury Hair Logo">
+                <span class="logo-text">IRENE LUXURY HAIR AND COLLECTIONS</span>
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#collections">Collections</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="catalogue-hero">
+            <h1>Our Full Catalogue</h1>
+            <p>Explore our exclusive range of luxury hair extensions, designer apparel, footwear, and accessories.</p>
+        </div>
+
+        <div class="catalogue-container">
+            <!-- Hair Collection -->
+            <h2 class="category-title">Luxury Hair</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?q=80&w=600&auto=format&fit=crop');">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Raw Cambodian Silk</div>
+                        <div class="product-price">$180 - $450</div>
+                        <a href="https://wa.me/yournumber" class="buy-button">Inquire</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=600&auto=format&fit=crop');">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">European Wave</div>
+                        <div class="product-price">$220 - $500</div>
+                        <a href="https://wa.me/yournumber" class="buy-button">Inquire</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1620331311520-246422ff82f9?q=80&w=600&auto=format&fit=crop');">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Sleek Bone Straight</div>
+                        <div class="product-price">$160 - $400</div>
+                        <a href="https://wa.me/yournumber" class="buy-button">Inquire</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Shoes Collection -->
+            <h2 class="category-title">Luxury Footwear</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1543163521-1bf539c55dd2?q=80&w=600&auto=format&fit=crop');">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Crystal Stiletto</div>
+                        <div class="product-price">$250</div>
+                        <a href="https://wa.me/yournumber" class="buy-button">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1581101767113-1677fe075684?q=80&w=600&auto=format&fit=crop');">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Velvet Mule</div>
+                        <div class="product-price">$180</div>
+                        <a href="https://wa.me/yournumber" class="buy-button">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Clothes Collection -->
+            <h2 class="category-title">Chic Apparel</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=600&auto=format&fit=crop');">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Evening Silk Gown</div>
+                        <div class="product-price">$350</div>
+                        <a href="https://wa.me/yournumber" class="buy-button">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1539109132374-348df1edea1b?q=80&w=600&auto=format&fit=crop');">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Luxury Satin Set</div>
+                        <div class="product-price">$120</div>
+                        <a href="https://wa.me/yournumber" class="buy-button">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bags Collection -->
+            <h2 class="category-title">Premium Handbags</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <div class="product-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=600&auto=format&fit=crop');">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Classic Leather Tote</div>
+                        <div class="product-price">$280</div>
+                        <a href="https://wa.me/yournumber" class="buy-button">Order Now</a>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image"
+                        style="background-image: url('https://images.unsplash.com/photo-1548036328-c9fa89d128fa?q=80&w=600&auto=format&fit=crop');">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">Gold Clutch</div>
+                        <div class="product-price">$150</div>
+                        <a href="https://wa.me/yournumber" class="buy-button">Order Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 80px;">
+                <a href="index.html" class="back-home">← Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer
+        style="background-color: #111; color: #fff; padding: 40px; text-align: center; border-top: 1px solid #D4AF37;">
+        <p>&copy; 2026 Irene Luxury Hair & Collections. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
