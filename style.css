@@ -21,7 +21,9 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Playfair Display', serif;
     color: var(--primary-gold);
 }
@@ -74,7 +76,7 @@ nav ul li a:hover {
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1595475241949-0d0240eece26?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://images.unsplash.com/photo-1595475241949-0d0240eece26?q=80&w=2000&auto=format&fit=crop') center/cover no-repeat;
     padding: 0 5%;
 }
 
@@ -138,16 +140,24 @@ nav ul li a:hover {
     border: 1px solid rgba(212, 175, 55, 0.2);
 }
 
-#item1 { background-image: url('https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?q=80&w=800&auto=format&fit=crop'); }
-#item2 { background-image: url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=800&auto=format&fit=crop'); }
-#item3 { background-image: url('https://images.unsplash.com/photo-1620331311520-246422ff82f9?q=80&w=800&auto=format&fit=crop'); }
+#item1 {
+    background-image: url('https://images.unsplash.com/photo-1492106087820-71f1a00d2b11?q=80&w=800&auto=format&fit=crop');
+}
+
+#item2 {
+    background-image: url('https://images.unsplash.com/photo-1580618672591-eb180b1a973f?q=80&w=800&auto=format&fit=crop');
+}
+
+#item3 {
+    background-image: url('https://images.unsplash.com/photo-1620331311520-246422ff82f9?q=80&w=800&auto=format&fit=crop');
+}
 
 .item-overlay {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.8));
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
     padding: 2rem;
     transition: all 0.5s;
 }
@@ -191,6 +201,15 @@ nav ul li a:hover {
 
 #chat-trigger:hover {
     transform: scale(1.1);
+}
+
+.chat-open #chat-trigger {
+    transform: rotate(180deg);
+    background: var(--champagne);
+}
+
+.chat-open #chat-trigger svg {
+    content: url('data:image/svg+xml;utf8,<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6 18M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>');
 }
 
 #chat-window {
@@ -239,6 +258,7 @@ nav ul li a:hover {
     border-radius: 50%;
     border: 1px solid var(--dark-charcoal);
     background: #fff;
+    object-fit: cover;
 }
 
 .chat-header-text h3 {
@@ -248,7 +268,7 @@ nav ul li a:hover {
 }
 
 .chat-header-text span {
-    color: rgba(0,0,0,0.6);
+    color: rgba(0, 0, 0, 0.6);
     font-size: 0.75rem;
     font-weight: 600;
 }
@@ -302,7 +322,7 @@ nav ul li a:hover {
 
 #chat-input {
     flex: 1;
-    background: rgba(255,255,255,0.05);
+    background: rgba(255, 255, 255, 0.05);
     border: 1px solid rgba(212, 175, 55, 0.3);
     border-radius: 8px;
     padding: 12px;
@@ -327,6 +347,7 @@ nav ul li a:hover {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -341,6 +362,12 @@ nav ul li a:hover {
         height: 100vh;
         border-radius: 0;
     }
-    .chat-header { border-radius: 0; }
-    .hero-content h1 { font-size: 2.5rem; }
+
+    .chat-header {
+        border-radius: 0;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
 }
